@@ -24,7 +24,7 @@ int main()
 			} 
 			if(isPrime == 1)
 			{
-				printf("\n %d is a Prime Factor ", i);
+				printf("%d is a Prime Factor\n", i);
 			}	          	
 		}
    }
