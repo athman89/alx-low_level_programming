@@ -1,15 +1,26 @@
 /* C Program to find the factor of a Number using a Function */
  
 #include <stdio.h>
-int main() {
-    int num, i;
-    printf("Enter a positive integer: ");
-    scanf("%d", &num);
-    printf("Factors of %d are: ", num);
-    for (i = 1; i <= num; ++i) {
-        if (num % i == 0) {
-            printf("%d ", i);
-        }
+ 
+void primeFactors(unsigned long n)
+{
+  unsigned long c = 2;
+  while (n > 1) {
+    if (n % c == 0) {
+      printf("%lu ", c);
+      n /= c;
     }
-    return 0;
+    else
+      c++;
+  }
+}
+ 
+/* Driver code */
+int main()
+{
+  unsigned long n;
+  printf("Enter any number to print Prime factors: ");
+    scanf("%lu", &n);
+  primeFactors(n);
+  return 0;
 }
