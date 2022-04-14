@@ -7,7 +7,7 @@ void primeFactors(unsigned long n)
   unsigned long c = 2;
   while (n > 1) {
     if (n % c == 0) {
-      printf("%lu ", c);
+      printf("%lu\n", c);
       n /= c;
     }
     else
