@@ -4,7 +4,7 @@
  *
  * Return: Always 0.
  */
-char *cap_string(char *str)
+char *cap_string(char *n)
 {
 	int i, x;
 	int cap = 32;
