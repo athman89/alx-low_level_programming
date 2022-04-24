@@ -5,9 +5,9 @@
  *
  * Return: Always 0.
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
-	char *str;
+	
 	for(i=0; str[i]!='\0'; i++)
 	{
 	if(i==0)
