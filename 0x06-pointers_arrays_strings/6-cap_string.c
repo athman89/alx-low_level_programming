@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - check the code
  *
@@ -7,31 +6,26 @@
  */
 char *cap_string(char *str)
 {
-	
-	for(i=0; str[i]!='\0'; i++)
+	int i, x;
+	int cap = 32;
+	int separators[] = {',', ';', '.', '?', '"',
+	'(', ')', '{', '}', ' ', '\n', '\t'};
+	for (i = 0; n[i] != '\0'; i++)
 	{
-	if(i==0)
+	if (n[i] >= 'a' && n[i] <= 'z')
 	{
-	if((str[i]>='a' && str[i]<='z'))
-	str[i]=str[i]-32;
-	continue; 
+	n[i] = n[i] - cap;
 	}
-	if(str[i]==' ')
+	cap = 0;
+	for (x = 0; x <= 12; x++)
 	{
-	++i;
-	if(str[i]>='a' && str[i]<='z')
+	if (n[i] == separators[x])
 	{
-	str[i]=str[i]-32; 
-	continue; 
+	x = 12;
+	cap = 32;
 	}
 	}
-	else
-	{
-	if(str[i]>='A' && str[i]<='Z')
-	str[i]=str[i]+32; 
 	}
-	} 
-	return (str);
-}
-
+	return (n);
+	}
 }
