@@ -6,11 +6,15 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	const unsigned char *p1 = ( const unsigned char * )s1;
-	const unsigned char *p2 = ( const unsigned char * )s2;
-	while ( *p1 && *p1 == *p2 )
+	while (1)
 	{
-	++p1, ++p2;
+	int res = ((*s1 == 0) || (*s1 != *s2));
+	if  (__builtin_expect((res),0))
+	{
+	break;
 	}
-	return ( *p1 > *p2 ) - ( *p2  > *p1 );
+	++s1;
+	++s2;
+	}
+	return (*s1 - *s2);
 }
