@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * factorial of a number
+ * factorial of a given number
  * @n: input
  * Return: Always 0 (Success)
  */
