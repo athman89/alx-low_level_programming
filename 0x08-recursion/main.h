@@ -1,5 +1,6 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
+int _putchar(char c);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
