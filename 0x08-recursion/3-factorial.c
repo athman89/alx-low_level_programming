@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * factorial of a given number
  * @n: input
