@@ -2,7 +2,8 @@
 /**
  * factorial of a given number
  * @n: input
- * main - check the code
+ * return -1 if less than 0
+ * return 1 when equal to zero
  * Return: Always 0 (Success)
  */
 int factorial(int n)
