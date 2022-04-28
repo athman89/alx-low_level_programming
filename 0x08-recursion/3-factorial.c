@@ -2,6 +2,7 @@
 /**
  * factorial of a given number
  * @n: input
+ * main - check the code
  * Return: Always 0 (Success)
  */
 int factorial(int n)
