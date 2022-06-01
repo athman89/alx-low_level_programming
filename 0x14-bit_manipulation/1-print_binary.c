@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_binary - Entry Point
+ * print_binary - A representation Entry Point
  * @n: dec input
  * Return: 0
  */
 void print_binary(unsigned long int n)
 {
-	int j = 0;
-	int counts, l, temp;
+	int j = 0, counts, l, temp;
 
 	if (n == 0)
 	{
