@@ -1,5 +1,11 @@
 #include "main.h"
-
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 /**
  * read_textfile - Entry Point
  * @filename: The files name
